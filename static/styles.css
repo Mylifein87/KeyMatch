@@ -1,0 +1,123 @@
+body{
+    background-image: url(iphone.jpg);
+    height: 100%;
+    background-repeat: no-repeat;
+    background-size: cover;
+    
+}
+
+h1{
+    color: rgb(10, 158, 216);
+    text-align: center;
+    font-size: 120px;
+    font-family: "Moirai One", serif;
+    font-weight: 700;
+    font-style: normal;
+ 
+    width: 100%;
+    display: inline-block;
+}
+
+h2{
+    color: rgb(10, 158, 216);
+    font-family: "Moirai One", serif;
+    font-size: 24px;
+}
+
+    
+
+p{
+    color: black;
+    text-align: center;
+    font-size: 24px;
+    font-family: 'Times New Roman', Times, serif;
+    
+}
+
+
+form{
+    position: relative;
+    text-align: center;
+}
+
+
+input[type=text] {
+    width: 200px; 
+    height: 30px; 
+    text-align: center;
+    box-sizing: border-box; 
+    border-radius: 25;
+    
+}
+
+button {
+    height: 30px;
+    margin: 38px;
+    box-sizing: border-box;
+    border-radius: 25;
+    background-color:rgb(10, 158, 216); 
+}
+
+button:active{
+    background-color: skyblue;
+    box-shadow: 0 5px #666;
+    transform: translateY(4px);
+}
+
+
+
+li{
+    color: black;
+    font-family: serif;
+    font-size: 20px;
+    font-weight: 400;
+    
+}
+
+
+@media (max-width: 600px) {
+    h1 {
+        font-size: 40px; /* Reduce font size for smaller screens */
+    }
+
+    p {
+        font-size: 16px; /* Smaller font for paragraphs */
+    }
+
+    input[type="text"] {
+        width: 150px; /* Adjust input field size */
+        height: 25px;
+    }
+
+    button {
+        width: 150px; /* Adjust button size */
+    }
+
+    li {
+        font-size: 16px; /* Reduce font size for list items */
+    }
+}
+
+
+
+@media (min-width: 1025px) {
+    h1 {
+        font-size: 120px; /* Default font size for large screens */
+    }
+
+    p {
+        font-size: 24px; /* Default paragraph text size */
+    }
+
+    input[type="text"] {
+        width: 200px; /* Default input field size */
+    }
+
+    button {
+        width: 200px; /* Default button size */
+    }
+
+    li {
+        font-size: 20px; /* Default list item font size */
+    }
+}

@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<html>
+<head>
+
+    <title>KeyMatch</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta http-equiv="refresh">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Megrim&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Climate+Crisis&family=Megrim&family=Moirai+One&family=Syncopate:wght@400;700&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" type="text/css" href="/static/styles.css">
+</head>
+
+
+
+
+<body>
+
+<h1>KeyMatch</h1>
+<p>Welcome to KeyMatch! Enter a Job Title to get relevant keywords to help your resume pass the Applicant Tracking System!</p>
+
+<div class="input-box">
+<form method="POST">
+    <input type="text" name="job_role" placeholder="Enter Job Role or Title">
+    <button type="submit">SUBMIT</button>
+</form>
+</div>
+
+<div class="output-box">
+    <h3>Suggested keywords for a {{job_role}} resume:</h3>
+
+
+    <div class="response">
+        <h2>KeyMatch</h2>
+        <p>Queries may take up to 8 sec.</p>
+        <ul>
+            {% for keyword in response %}
+            <li>{{keyword}}</li>
+            {% endfor %}   
+        </ul>
+    </div>
+</div>
+
+
+</body>
+
+</html>
