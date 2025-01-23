@@ -8,6 +8,10 @@ from dotenv import load_dotenv
 
 
 app = Flask(__name__, static_folder='static')
+<<<<<<< HEAD
+=======
+
+>>>>>>> 6413ef43661f68d16b775abde5ebe821af639c9e
 
 load_dotenv()
 openai.api_key = os.getenv("OPENAI_API_KEY")
