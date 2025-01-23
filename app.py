@@ -7,7 +7,7 @@ from dotenv import load_dotenv
 
 
 
-app = Flask(__name__)
+app = Flask(__name__, static_folder='static')
 
 
 load_dotenv()
