@@ -7,7 +7,7 @@ from dotenv import load_dotenv
 
 
 
-app = Flask(__name__)
+app = Flask(__name__, static_folder='static')
 
 load_dotenv()
 openai.api_key = os.getenv("OPENAI_API_KEY")
